@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "synapseconvert"
-version = "0.1.2"
+version = "0.1.3"
 description = "Tools for converting Synapse RTP (research transport protocol) JSON to spreadsheet and back."
 authors = [
   { name="Samuel Baylis", email="request@biblicalstory.org" }
@@ -19,5 +19,5 @@ dependencies = [
 ]
 
 [project.scripts]
-synapse-upconvert = "synapse_tools.upconvert:main"
-synapse-downconvert = "synapse_tools.downconvert:main"
+synapse-upconvert = "synapseconvert.upconvert:main"
+synapse-downconvert = "synapseconvert.downconvert:main"
