@@ -1,4 +1,3 @@
-Absolutely — here is the full README.md as a single, properly formatted Markdown file:
 
 # synapseconvert
 
