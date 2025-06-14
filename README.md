@@ -1,7 +1,7 @@
 
 # synapseconvert
 
-A simple two-way converter for Synapse-style libraries (collections → categories → items) using Excel and JSON. This is intended for developers working with [Synapse](https://biblicalstory.org/tools/synapse), a research transport protocol designed for structured academic resources.
+A simple two-way converter for Synapse-style libraries (collections → categories → items) using Excel and JSON. This is intended for developers working with [Synapse](https://substrate.biblicalstory.org/synapse), a research transport protocol designed for structured academic resources.
 
 ## 📦 Installation
 
@@ -36,7 +36,9 @@ The spreadsheet must contain at least the following columns:
 	•	title, description, etc. – all other metadata fields are treated as item fields
 	•	tags – a valid JSON list (e.g., ["Genesis", "Luke"])
 
-A sample blank spreadsheet is available in this repository as blank_synapse_library.xlsx.
+A sample blank spreadsheet is available in this repository as templates -> sample.xlsx
+
+A sample JSON file is available in this repository as templates -> sample.json
 
 🧠 Why This Exists
 
@@ -53,5 +55,5 @@ pip install -e .
 ---
 
 
-© 2025 BiblicalStory.org. MIT License.
+© 2025 BiblicalStory Incorporated. MIT License.
 
