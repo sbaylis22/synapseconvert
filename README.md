@@ -1,20 +1,58 @@
-# Synapse Library Tools (Nested Format)
+Absolutely — here is the full README.md as a single, properly formatted Markdown file:
 
-This toolkit provides a two-way converter for nested Synapse-style libraries (collections → categories → items).
+# synapseconvert
 
-## Usage
+A simple two-way converter for Synapse-style libraries (collections → categories → items) using Excel and JSON. This is intended for developers working with [Synapse](https://biblicalstory.org/tools/synapse), a research transport protocol designed for structured academic resources.
 
-**Downconvert to Excel**
+## 📦 Installation
+
+Install via pip:
+
 ```bash
-python synapse_downconvert.py metadata.json synapse_library.xlsx
-```
+pip install synapseconvert
 
-**Upconvert to JSON**
-```bash
-python synapse_upconvert.py synapse_library.xlsx metadata.json
-```
+You’ll then have access to the command-line tools:
+	•	synapse-upconvert
+	•	synapse-downconvert
 
-## Notes
+🛠 Usage
 
-- Tags must be valid JSON lists (e.g., ["Genesis", "Luke"])
-- Collection name assumed uniform for now
+Convert from Excel to JSON (Upconvert)
+
+synapse-upconvert path/to/input.xlsx path/to/output.json
+
+This reads a spreadsheet and produces a properly nested Synapse metadata file.
+
+Convert from JSON to Excel (Downconvert)
+
+synapse-downconvert path/to/input.json path/to/output.xlsx
+
+This flattens a Synapse-style JSON file into a spreadsheet for editing or review.
+
+📄 Spreadsheet Format
+
+The spreadsheet must contain at least the following columns:
+	•	collection – the name of the collection (uniform across all rows)
+	•	category – name of the group the item belongs to
+	•	title, description, etc. – all other metadata fields are treated as item fields
+	•	tags – a valid JSON list (e.g., ["Genesis", "Luke"])
+
+A sample blank spreadsheet is available in this repository as blank_synapse_library.xlsx.
+
+🧠 Why This Exists
+
+Synapse is designed to bring remote research libraries directly into Obsidian. Since BiblicalStory cannot make synapse files of all of the repositories that exist, we are providing these tools so that the developers can make synapse libraries of any research library that exists. These libraries can then be added in the synapse settings within Obsidian. 
+
+🔧 Developer Tools
+
+For advanced usage, you can clone this repo and run the commands locally from source:
+
+git clone https://github.com/BiblicalStory/synapseconvert.git
+cd synapseconvert
+pip install -e .
+
+---
+
+
+© 2025 BiblicalStory.org. MIT License.
+
