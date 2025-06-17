@@ -1,7 +1,6 @@
 LICENSE
 MANIFEST.in
 README.md
-pyproject.toml
 setup.py
 synapseconvert/__init__.py
 synapseconvert/downconvert.py
