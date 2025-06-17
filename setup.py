@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="synapseconvert",
-    version="0.1.3",
+    version="0.1.4",
     author="Samuel Baylis",
     author_email="request@biblicalstory.org",
     description="Tools for converting Synapse RTP JSON to spreadsheet and back.",
