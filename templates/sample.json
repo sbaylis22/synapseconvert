@@ -1,0 +1,25 @@
+{
+    "Collection": {
+        "name": "BiblicalStory",
+        "designator": "BST",
+        "url": "www.thebiblicalstory.org",
+        "Categories": [
+            {
+                "name": "Articles",
+                "items": [
+                    {
+                        "id": "art1",
+                        "title": "The Elijah/Elisha Motif in Luke 7–10 as Related to the Purpose of the Book of Luke",
+                        "url": "https://thebiblicalstory.org/baylis/wp-content/uploads/2015/06/Elijah_Elisha_Luke_Thesis_Baylis_1985.pdf",
+                        "author": "C. Baylis",
+                        "publisher": "BiblicalStory",
+                        "date": "1985",
+                        "tags": ["introduction", "luke", "elijah", "elisha", "kings"],
+                        "description": "",
+                        "ris": "https://drive.google.com/file/d/1pEbxsVb5id47rh4pf0xS5HX7mXadrPfV/view"
+                    }
+                ]
+            }
+        ]
+    }
+}

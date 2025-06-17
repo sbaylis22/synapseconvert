@@ -1,7 +1,8 @@
-Metadata-Version: 2.4
+Metadata-Version: 2.1
 Name: synapseconvert
 Version: 0.1.3
 Summary: Tools for converting Synapse RTP (research transport protocol) JSON to spreadsheet and back.
+Author: Samuel Baylis
 Author-email: Samuel Baylis <request@biblicalstory.org>
 License: MIT License
         
@@ -30,7 +31,6 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: pandas
 Requires-Dist: openpyxl
-Dynamic: license-file
 
 
 # synapseconvert
