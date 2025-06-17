@@ -2,6 +2,7 @@ Metadata-Version: 2.1
 Name: synapseconvert
 Version: 0.1.3
 Summary: Tools for converting Synapse RTP (research transport protocol) JSON to spreadsheet and back.
+Home-page: https://github.com/BiblicalStory/synapseconvert
 Author: Samuel Baylis
 Author-email: Samuel Baylis <request@biblicalstory.org>
 License: MIT License
