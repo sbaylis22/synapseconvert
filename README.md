@@ -36,13 +36,16 @@ The spreadsheet must contain at least the following columns:
 	•	title, description, etc. – all other metadata fields are treated as item fields
 	•	tags – a valid JSON list (e.g., ["Genesis", "Luke"])
 
-A sample blank spreadsheet is available in this repository as templates -> sample.xlsx
+📁 Sample template files:
+	•	sample.xlsx
+	•	sample.json
 
-A sample JSON file is available in this repository as templates -> sample.json
+These are included in the installed package and available for download or reference from the templates folder on GitHub.
+https://github.com/sbaylis22/synapseconvert
 
 🧠 Why This Exists
 
-Synapse is designed to bring remote research libraries directly into Obsidian. Since BiblicalStory cannot make synapse files of all of the repositories that exist, we are providing these tools so that the developers can make synapse libraries of any research library that exists. These libraries can then be added in the synapse settings within Obsidian. 
+Synapse is designed to bring remote research libraries directly into Obsidian. Since BiblicalStory cannot create Synapse files for every research repository in existence, we are providing these tools so developers can build Synapse libraries for any collection. These libraries can then be added in the Synapse settings within Obsidian.
 
 🔧 Developer Tools
 
@@ -52,8 +55,11 @@ git clone https://github.com/BiblicalStory/synapseconvert.git
 cd synapseconvert
 pip install -e .
 
----
 
+⸻
 
 © 2025 BiblicalStory Incorporated. MIT License.
 
+---
+
+Let me know if you'd like to add a `synapse-template-path` CLI command or a Python example to programmatically access the templates inside the installed package.
