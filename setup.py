@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="synapseconvert",
-    version="0.1.5",
+    version="0.1.6",  # ✅ Incremented for PyPI release
     author="Samuel Baylis",
     author_email="request@biblicalstory.org",
     description="Tools for converting Synapse RTP JSON to spreadsheet and back.",
@@ -11,6 +11,9 @@ setup(
     url="https://github.com/BiblicalStory/synapseconvert",
     packages=find_packages(),
     include_package_data=True,
+    package_data={
+        "synapseconvert": ["templates/*"],  # ✅ Include templates folder
+    },
     install_requires=[
         "pandas",
         "openpyxl"
