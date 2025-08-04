@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="synapseconvert",
-    version="0.1.7",  # ✅ Incremented for PyPI release
+    version="1.0.0",  # ✅ Incremented for PyPI release
     author="Samuel Baylis",
     author_email="request@biblicalstory.org",
     description="Tools for converting Synapse RTP JSON to spreadsheet and back.",

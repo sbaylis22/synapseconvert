@@ -11,7 +11,16 @@ def upconvert(input_path: str, output_path: str):
         print(f"❌ Input file not found: {input_path}")
         sys.exit(1)
 
-    collection_name = df["collection"].iloc[0] if "collection" in df.columns else "Unnamed Collection"
+    # Try to get collection-level fields from the first row
+    first_row = df.iloc[0]
+
+    collection_name = first_row["collection"] if "collection" in df.columns and pd.notna(
+        first_row["collection"]) else "Unknown Collection"
+    designator = first_row["designator"] if "designator" in df.columns and pd.notna(
+        first_row["designator"]) else "UNK"
+    collection_url = first_row["collection_url"] if "collection_url" in df.columns and pd.notna(
+        first_row["collection_url"]) else "https://substrate.biblicalstory.org"
+
     categories = {}
 
     for _, row in df.iterrows():
@@ -19,7 +28,7 @@ def upconvert(input_path: str, output_path: str):
             continue
 
         cat = row["category"]
-        item = row.drop(labels=["collection", "category"],
+        item = row.drop(labels=["collection", "category", "designator", "collection_url"],
                         errors="ignore").dropna().to_dict()
 
         if "tags" in item and isinstance(item["tags"], str):
@@ -33,8 +42,8 @@ def upconvert(input_path: str, output_path: str):
     collection = {
         "Collection": {
             "name": collection_name,
-            "designator": "BST",
-            "url": "https://thebiblicalstory.org",
+            "designator": designator,
+            "url": collection_url,
             "Categories": [{"name": k, "items": v} for k, v in categories.items()]
         }
     }

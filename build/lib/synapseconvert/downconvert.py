@@ -30,12 +30,17 @@ def main():
 
     try:
         collection = data["Collection"]["name"]
+        designator = data["Collection"].get("designator", "")
+        collection_url = data["Collection"].get("url", "")
+
         rows = []
         for category in data["Collection"]["Categories"]:
             for item in category["items"]:
                 rows.append({
                     "collection": collection,
                     "category": category["name"],
+                    "designator": designator,
+                    "collection_url": collection_url,
                     **item
                 })
 
