@@ -61,5 +61,3 @@ pip install -e .
 © 2025 BiblicalStory Incorporated. MIT License.
 
 ---
-
-Let me know if you'd like to add a `synapse-template-path` CLI command or a Python example to programmatically access the templates inside the installed package.
